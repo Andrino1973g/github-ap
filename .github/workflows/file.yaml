@@ -4,12 +4,12 @@ jobs:
     run-shell command:
     runs-on: ubuntu-latest
     steps:
-        - name: checkout
+      - name: checkout
         uses: actions/checkout@3
-        - name: echo string
+      - name: echo string
          run: echo "Hello"
-        - name: multiline script
+      - name: multiline script
           run: |
-           node -v
-           pwd 
+            node -v
+            pwd 
          
