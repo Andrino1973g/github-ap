@@ -1,8 +1,8 @@
 ---
     name: shell commands
-    on: [push]
+    on: push
     jobs:
-      run-shell-command:
+      run-shell-command: 
       runs-on: ubuntu-latest
       steps:
         - name: checkout
@@ -12,4 +12,4 @@
         - name: multiline script
           run: |
             node -v
-            pwd        
+            pwd
